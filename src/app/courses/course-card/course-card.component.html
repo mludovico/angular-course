@@ -1,0 +1,14 @@
+<div class="card" [ngClass]=courseClasses() [ngClass]=oddEven()>
+  <div class="title" [ngStyle]="{'text-decoration': 'underline'}">
+    {{ course.title }}
+  </div>
+  <div class="logo">
+    @if (course.iconUrl) {
+      <ng-content select="img"></ng-content>
+    } @else {
+      <div class="no-icon">No image available</div>
+    }
+  </div>
+  <input #courseTitle [value]="course.description">
+  <button (click)="onCourseViewClick(courseTitle.value)">Save</button>
+</div>

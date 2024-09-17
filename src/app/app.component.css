@@ -1,0 +1,27 @@
+.top-menu {
+  background-color: #3355CC;
+  padding: 10px;
+  border-bottom: 1px solid #e9ecef;
+  height: 70px;
+}
+
+.logo {
+  width: auto;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.is-odd {
+  border: #FF1111 2px solid;
+}
+
+.is-even {
+  border: #3355CC 2px solid;
+}
